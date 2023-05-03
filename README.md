@@ -9,3 +9,8 @@ The data set is often used for statistical analysis, visualization, and machine 
 
 Fisher's Iris data set is considered a classic example of exploratory data analysis and is widely used in data science education and research.
 References: https://www.angela1c.com/projects/iris_project/the-iris-dataset/ , 
+
+
+the project:
+importing the dataset: best way was online. The in file ones were tempermental.
+exporting the variables to text file: similar to the 'Es' task. Need to give headings for the types. 
