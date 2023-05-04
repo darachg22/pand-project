@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns 
 
 #importing the dataset
 iris_data = pd.read_csv('iris.csv') 
@@ -12,40 +13,43 @@ content = str(iris_data)
 print(content, file=open('variables_summary.txt', 'w'))     
 #creating histograms of variables
 #Sepal Length Histogram
-plt.hist(iris_data['sepal.length'], bins=15)
+plt.hist(iris_data['sepal.length'], bins=7)
 plt.title('Sepal Length')
 plt.xlabel('Length')
 plt.ylabel('Frequency')
+plt.savefig('sepal_length_histogram.png')
 plt.show()
 #Sepal Width
-plt.hist(iris_data['sepal.width'], bins=10)
+plt.hist(iris_data['sepal.width'], bins=5)
 plt.title('Sepal Width')
 plt.xlabel('Width')
 plt.ylabel('Frequency')
+plt.savefig('sepal_width_histogram.png')
 plt.show()
 #Petal Lenght
-plt.hist(iris_data['petal.length'], bins=10)
+plt.hist(iris_data['petal.length'], bins=6)
 plt.title('Petal Length')
 plt.xlabel('Length')
 plt.ylabel('Frequency')
+plt.savefig('petal_length_histogram.png')
 plt.show()
 #Petal Width
-plt.hist(iris_data['petal.width'], bins=10)
+plt.hist(iris_data['petal.width'], bins=6)
 plt.title('Petal Width')
 plt.xlabel('Width')
 plt.ylabel('Frequency')
+plt.savefig('petal_width_histogram.png')
 plt.show()
 
 #create a scatter plot for each pair of variables
-#Sepal Width vs Sepal Length
-plt.scatter(iris_data['sepal.length'], iris_data['sepal.width'])
-plt.title('Sepal Width vs Sepal Length')
-plt.xlabel('sepal.length')
-plt.ylabel('sepal.width')
-plt.show()
 #Petal Width vs Petal Length
-plt.scatter(iris_data['petal.length'], iris_data['petal.width'])
-plt.title('Petal Width vs Petal Length')
-plt.xlabel('Petal.length')
-plt.ylabel('Petal.width')
+sns.scatterplot(x='petal.length', y='petal.width',
+                hue='variety', data=iris_data, )
+plt.legend(bbox_to_anchor=(1, 1), loc=2) 
+plt.show()
+
+#Sepal Width vs Sepal Length
+sns.scatterplot(x='sepal.length', y='sepal.width',
+                hue='variety', data=iris_data, )
+plt.legend(bbox_to_anchor=(1, 1), loc=2)
 plt.show()
