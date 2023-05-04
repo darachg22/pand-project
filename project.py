@@ -37,8 +37,15 @@ plt.ylabel('Frequency')
 plt.show()
 
 #create a scatter plot for each pair of variables
+#Sepal Width vs Sepal Length
 plt.scatter(iris_data['sepal.length'], iris_data['sepal.width'])
 plt.title('Sepal Width vs Sepal Length')
 plt.xlabel('sepal.length')
 plt.ylabel('sepal.width')
+plt.show()
+#Petal Width vs Petal Length
+plt.scatter(iris_data['petal.length'], iris_data['petal.width'])
+plt.title('Petal Width vs Petal Length')
+plt.xlabel('Petal.length')
+plt.ylabel('Petal.width')
 plt.show()
