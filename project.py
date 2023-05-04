@@ -12,7 +12,7 @@ content = str(iris_data)
 print(content, file=open('variables_summary.txt', 'w'))     
 #creating histograms of variables
 #Sepal Length Histogram
-plt.hist(iris_data['sepal.length'], bins=10)
+plt.hist(iris_data['sepal.length'], bins=15)
 plt.title('Sepal Length')
 plt.xlabel('Length')
 plt.ylabel('Frequency')
@@ -34,4 +34,11 @@ plt.hist(iris_data['petal.width'], bins=10)
 plt.title('Petal Width')
 plt.xlabel('Width')
 plt.ylabel('Frequency')
+plt.show()
+
+#create a scatter plot for each pair of variables
+plt.scatter(iris_data['sepal.length'], iris_data['sepal.width'])
+plt.title('Sepal Width vs Sepal Length')
+plt.xlabel('sepal.length')
+plt.ylabel('sepal.width')
 plt.show()

@@ -17,4 +17,4 @@ exporting the variables to text file: similar to the 'Es' task. Need to give hea
 
 creating the histogram: I have created an individual histogram for each of the columns using matplot. I need to now update the x and y axis and make this more readable i.e. put height along the side and width along the bottom for symmetry. Also I may need to consider using a loop to shorten the code. Research to follow.
 
-
+creating the scatter plot for both pairs of variables: Need to find a way to change the colors of the scatterplots. I find them difficult to read at the moment.
