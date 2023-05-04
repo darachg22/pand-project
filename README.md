@@ -15,4 +15,6 @@ best way was online. The in file ones were tempermental.alternative dataframe us
 
 exporting the variables to text file: similar to the 'Es' task. Need to give headings for the types. Headings resource found: https://www.geeksforgeeks.org/python-read-csv-using-pandas-read_csv/. update: once I used the csv version the files headings were created anyway. resources used to export: https://blog.finxter.com/python-convert-csv-to-text-file-csv-to-txt/. When exported the text file was shortened significantly. I learned about truncation and implemented the steps needed to prevent it. Reference used: https://nadeauinnovations.com/post/2021/05/python-tips-how-to-stop-a-pandas-data-table-from-being-truncated-when-printed/ 
 
+creating the histogram: I have created an individual histogram for each of the columns using matplot. I need to now update the x and y axis and make this more readable i.e. put height along the side and width along the bottom for symmetry. Also I may need to consider using a loop to shorten the code. Research to follow.
+
 
