@@ -18,3 +18,9 @@ exporting the variables to text file: similar to the 'Es' task. Need to give hea
 creating the histogram: I have created an individual histogram for each of the columns using matplot. I need to now update the x and y axis and make this more readable i.e. put height along the side and width along the bottom for symmetry. Also I may need to consider using a loop to shorten the code. Research to follow. After re-reading the project paramenters I realised I needed to save each histogram to a png file. I achieved this by adding the 'plot.savefig' function to each histogram.
 
 creating the scatter plot for both pairs of variables: Need to find a way to change the colors of the scatterplots. I find them difficult to read at the moment. update: using seaborn as a means to improve the visuals and ended up finding a better to undertsand and tidier code here: https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/. 
+
+
+Tidying up the code:
+how do i send this to a created folder:
+make the histrogram more readable
+shorten the histogram section (using while,if loops) 

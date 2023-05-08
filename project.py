@@ -46,10 +46,12 @@ plt.show()
 sns.scatterplot(x='petal.length', y='petal.width',
                 hue='variety', data=iris_data, )
 plt.legend(bbox_to_anchor=(1, 1), loc=2) 
+plt.savefig('Scatterplot_petallength_petalwidth.png')
 plt.show()
 
 #Sepal Width vs Sepal Length
 sns.scatterplot(x='sepal.length', y='sepal.width',
                 hue='variety', data=iris_data, )
 plt.legend(bbox_to_anchor=(1, 1), loc=2)
+plt.savefig('Scatterplot_sepallength_sepalwidth.png')
 plt.show()
