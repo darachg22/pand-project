@@ -1,26 +1,24 @@
 # pand-project
+
 A data analysis project looking at Fisher's Iris Dataset
+
 Introduction: 
-
-Fisher's Iris data set is a famous multivariate data set introduced by the British statistician and biologist Ronald Fisher in 1936. The data set consists of measurements on the length and width of sepals and petals of three species of iris flowers: Setosa, Versicolor, and Virginica.
+Fisher's Iris data set is a famous data set introduced by the British statistician and biologist Ronald Fisher in 1936. The data set consists of measurements on the length and width of sepals and petals of three varieties of iris flowers: Setosa, Versicolor, and Virginica.
 There are 50 samples for each species, making a total of 150 samples. The measurements are in centimeters and consist of sepal length, sepal width, petal length, and petal width.
-The data set is often used for statistical analysis, visualization, and machine learning algorithms, such as classification and clustering. It is also used as a benchmark data set for evaluating new methods and algorithms.
-Fisher's Iris data set is considered a classic example of exploratory data analysis and is widely used in data science education and research.
-References: https://www.angela1c.com/projects/iris_project/the-iris-dataset/ , 
+The data set is often used for statistical analysis, visualization, and machine learning algorithms, such as classification and clustering. It is also used as a benchmark data set for evaluating new methods and algorithms. Fisher's Iris data set is considered a classic example of exploratory data analysis and is widely used in data science education and research.
 
+This Code:
+When this code is ran, it will first create a folder titled 'Results' containing information surrounding the Iris Dataset. Within this folder there will be 8 files (seven .png files and one .txt file). These files contain analysis of the dataset. The dataset, explained in the introudction, is the Iris dataset, which contains measurements of four features (sepal length, sepal width, petal length, and petal width) for three different species of Iris flowers (setosa, versicolor, and virginica). The dataset is loaded from a CSV file named `iris.csv`.
 
-the project:
-importing the dataset: 
-best way was online. The in file ones were tempermental.alternative dataframe used in iris.cv. I realised (once again) that my terminal was in the wrong location for accessing the files I need. Once this was rectified, the importing and analysing of the data improved drastically. 
+To Run:
+Run the script using a Python interpreter (e.g., `python iris_analysis.py`).
 
-exporting the variables to text file: similar to the 'Es' task. Need to give headings for the types. Headings resource found: https://www.geeksforgeeks.org/python-read-csv-using-pandas-read_csv/. update: once I used the csv version the files headings were created anyway. resources used to export: https://blog.finxter.com/python-convert-csv-to-text-file-csv-to-txt/. When exported the text file was shortened significantly. I learned about truncation and implemented the steps needed to prevent it. Reference used: https://nadeauinnovations.com/post/2021/05/python-tips-how-to-stop-a-pandas-data-table-from-being-truncated-when-printed/ 
+The Files:
+The generated results can be found in the `Results` folder after running the script. The folder will contain the following files:
+- `variables_summary.txt`: A summary of each variable in the dataset.
+- `colname_histogram.png`: Histograms for each variable, where `colname` corresponds to the column name in the dataset.
+- `Scatterplot_petallength_petalwidth.png`: Scatter plot of petal length versus petal width.
+- `Scatterplot_sepallength_sepalwidth.png`: Scatter plot of sepal length versus sepal width.
+- `Pairplot.png`: Pair plot showing the relationships between different variables.
 
-creating the histogram: I have created an individual histogram for each of the columns using matplot. I need to now update the x and y axis and make this more readable i.e. put height along the side and width along the bottom for symmetry. Also I may need to consider using a loop to shorten the code. Research to follow. After re-reading the project paramenters I realised I needed to save each histogram to a png file. I achieved this by adding the 'plot.savefig' function to each histogram.
-
-creating the scatter plot for both pairs of variables: Need to find a way to change the colors of the scatterplots. I find them difficult to read at the moment. update: using seaborn as a means to improve the visuals and ended up finding a better to undertsand and tidier code here: https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/. 
-
-
-Tidying up the code:
-how do i send this to a created folder:
-make the histrogram more readable
-shorten the histogram section (using while,if loops) 
+For a step by step of count of my creating this script, please see pand-project.ipynb jupyter notebook file within this repository. 
